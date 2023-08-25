@@ -25,6 +25,7 @@ module.exports = [
                       "strapi.io",
                       "s3.amazonaws.com",
                       "cdn.jsdelivr.net",
+                      "res.cloudinary.com"
                   ],
                   "style-src": ["'self'", "'unsafe-inline'"],
                   "script-src": [
