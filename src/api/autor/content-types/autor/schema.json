@@ -19,18 +19,6 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "url": {
-      "type": "string",
-      "required": true
-    },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
     }
   }
 }
