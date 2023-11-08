@@ -20,7 +20,8 @@
     "better-sqlite3": "8.0.1",
     "nvm": "^0.0.4",
     "pg": "^8.11.2",
-    "strapi-plugin-react-editorjs": "^2.0.2"
+    "strapi-plugin-react-editorjs": "^2.0.2",
+    "strapi-provider-upload-minio-ce": "^1.2.0"
   },
   "author": {
     "name": "A Strapi developer"
