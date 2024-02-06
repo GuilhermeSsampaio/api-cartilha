@@ -15,17 +15,27 @@
 // })
 
 
+// module.exports = ({ env }) => ({
+//   connection: {
+//     client: 'postgres',
+//     connection: {
+//       host: env('PGHOST'),
+//       port: env.int('PGPORT'),
+//       database: env('PGDATABASE'),
+//       user: env('PGUSER'),
+//       password: env('PGPASSWORD'),
+//       ssl: env.bool(true),
+//     },
+//     pool: { min: 0 }
+//   },
+// });
+
 module.exports = ({ env }) => ({
   connection: {
-    client: 'postgres',
-    connection: {
-      host: env('PGHOST'),
-      port: env.int('PGPORT'),
-      database: env('PGDATABASE'),
-      user: env('PGUSER'),
-      password: env('PGPASSWORD'),
-      ssl: env.bool(true),
-    },
-    pool: { min: 0 }
-  },
+      client: 'postgres',
+      connection: {
+          connectionString: env('DATABASE_URL')
+      },
+      pool: { min: 0 }
+  }
 });
