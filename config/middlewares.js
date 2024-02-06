@@ -8,7 +8,7 @@ module.exports = [
         directives: {
           'media-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com', "http://127.0.0.1:9001/browser/strapi/",
             "http://127.0.0.1:9001/strapi/upload/",
-            "http://localhost:9000", "dl.airtable.com",
+            "http://localhost:9000", "dl.airtable.com", 'res.cloudinary.com'
           ],
           "frame-src": [
             "'self'",
@@ -32,6 +32,7 @@ module.exports = [
             "http://127.0.0.1:9001/strapi/upload/",
             "http://localhost:9000",
             "dl.airtable.com",
+            'res.cloudinary.com'
           ],
           "style-src": ["'self'", "'unsafe-inline'"],
           "script-src": [
